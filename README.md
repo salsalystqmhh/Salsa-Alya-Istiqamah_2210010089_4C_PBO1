@@ -199,7 +199,7 @@ while (true) {
 }
 ```
 
-12. **Input Output Sederhana** digunakan untuk menerima input dari user dan menampilkan output ke user. Pada kode ini, digunakan class `Scanner` untuk menerima input dan method `System.out.println` untuk menampilkan output.
+12. **Input Output Sederhana** digunakan untuk menerima input dari user dan menampilkan output ke user. 
 
 ```bash
 Scanner scanner = new Scanner(System.in);
