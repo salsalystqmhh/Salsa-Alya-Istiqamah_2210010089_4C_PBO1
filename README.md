@@ -35,7 +35,7 @@ Novel novel = new Novel(judul, penulis, harga, genre);
 
 ```
 
-3. **Atribut** adalah variabel yang ada dalam class. Pada kode ini, `judul`, `penulis`, 'harga', dan 'genre' adalah contoh atribut.
+3. **Atribut** adalah variabel yang ada dalam class. Pada kode ini, `judul`, `penulis`, `harga`,dan`genre`adalah contoh atribut.
 
 ```bash
 String judul;
@@ -44,7 +44,7 @@ double harga;
 String genre;
 ```
 
-4. **Constructor** adalah method yang pertama kali dijalankan pada saat pembuatan object. Pada kode ini, constructor ada di dalam class `Mahasiswa` dan `MahasiswaDetail`.
+4. **Constructor** adalah method yang pertama kali dijalankan pada saat pembuatan object. Pada kode ini, constructor ada di dalam class `Buku` dan `Novel`.
 
 ```bash
 public Buku(String judul, String penulis, double harga) {
@@ -59,7 +59,7 @@ public Novel(String judul, String penulis, double harga, String genre) {
 }
 ```
 
-5. **Mutator** atau setter digunakan untuk mengubah nilai dari suatu atribut. Pada kode ini, `setNama` dan `setNpm` adalah contoh method mutator.
+5. **Mutator** atau setter digunakan untuk mengubah nilai dari suatu atribut. Pada kode ini, `setJudul`, `setPenulis', `setHarga`, dan `setGenre` adalah contoh method mutator.
 
 ```bash
 Mutator pada class Buku
@@ -122,7 +122,9 @@ public class Novel extends Buku{
 }
 ```
 
-9. **Polymorphism** adalah konsep di mana sebuah nama dapat digunakan untuk merujuk ke beberapa tipe atau bentuk objek berbeda. Ini memungkinkan metode-metode dengan nama yang sama untuk berperilaku berbeda tergantung pada tipe objek yang mereka manipulasi, polymorphism bisa berbentuk Overloading ataupun Overriding. Pada kode ini, method `displayInfo(String)` di `Mahasiswa` merupakan overloading method `displayInfo` dan `displayInfo` di `MahasiswaDetail` merupakan override dari method `displayInfo` di `Mahasiswa`.
+9. **Polymorphism** adalah konsep di mana sebuah nama dapat digunakan untuk merujuk ke beberapa tipe atau bentuk objek berbeda.Kelas Novel adalah subclass dari Buku, dan ia mewarisi semua atribut dan metode dari kelas Buku. Namun, Novel juga menambahkan atribut baru (genre) dan meng-override metode toString().Metode toString() di Novel meng-override metode toString() di Buku. Ketika toString() dipanggil pada objek Novel, versi metode yang diimplementasikan dalam Novel akan dieksekusi, meskipun objek tersebut direferensikan sebagai tipe Buku.
+
+java
 
 ```bash
 pada class Buku
@@ -206,7 +208,7 @@ String judul = scanner.nextLine();
 
 ```
 
-13. **Array** adalah struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel. Pada kode ini, `MahasiswaDetail[] mahasiswas = new MahasiswaDetail[2];` adalah contoh penggunaan array.
+13. **Array** adalah struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel. Pada kode ini, `private static ArrayList<Buku> daftarBuku = new ArrayList<>();` adalah contoh penggunaan array.
 
 ```bash
 private static ArrayList<Buku> daftarBuku = new ArrayList<>();
